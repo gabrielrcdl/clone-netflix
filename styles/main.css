@@ -1,0 +1,140 @@
+/*Definindo variáveis de cores do site no arquivo raiz(root)*/
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+
+*{
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box; /*Define que os elementos filhos terá o tamanho definido pelo pai dentro de uma caixa*/
+}
+
+
+
+/*elementos base*/
+body{
+    background-color: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row; /*Vem como padrão no flex, explícito apenas para nível semântico*/
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 35px;
+    margin-left: 15px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 15px;
+    font-family: sans-serif;
+}
+
+header nav a:hover{
+    color: #fff;
+
+}
+
+
+
+
+
+/*cartaz do filme principal*/
+
+
+
+.filme-principal{
+    background-image: linear-gradient(rgba(0,0,0,.70), rgba(0,0,0,.70)100%), url(/img/thumb-1920-1072652.jpg);
+    font-size: 16px;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;   
+}
+
+.filme-principal .container{
+
+    padding: 40px;
+    
+   
+   
+    
+}
+
+.filme-principal .descricao{
+    
+    font-family: sans-serif;
+    text-align: justify;
+    
+  
+      
+}
+
+.titulo{
+    margin-bottom: 4%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
+}
+
+.sinopse{
+  
+  margin-bottom: 8px;  
+}
+
+.autor{
+   margin-top: 12px;
+   color: #AAA;
+}
+
+.botoes{
+  margin-top: 8%;
+  display: inline-block;
+}
+
+.botao{
+    padding: 15px;
+    background-color:var(--vermelho);
+    border: none;
+    color: white;
+    cursor: pointer; 
+    margin-right: 10px; 
+    font-size: 12px; 
+    transition: 0.5s ease all;
+        
+
+}
+
+.botao:hover{
+    background-color:rgba(0, 0, 0, 0.50);
+   
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+
+}
+
+.carrosel-filmes{
+    margin-top: 10px;
+}
