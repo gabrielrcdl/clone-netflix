@@ -1,0 +1,94 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+
+*{
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box; /*Define que os elementos filhos terá o tamanho definido pelo pai dentro de uma caixa*/
+  font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+header .container{
+    display: flex;
+    flex-direction: row; /*Vem como padrão no flex, explícito apenas para nível semântico*/
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.171);
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 35px;
+    margin-left: 15px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 15px;
+    
+}
+
+header nav a:hover{
+    color: #fff;
+
+}
+
+
+/*elementos base*/
+body{
+    background-color: var(--preta);
+    color: white;
+}
+
+.title-page{
+    margin-bottom: 20px;
+}
+
+.container-watch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px;
+}
+
+.rodape{
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 350px;
+   
+
+}
+
+.container-footer{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+    padding: 120px;
+    color: #AAA;
+  
+}
+  
+  .container-footer a{
+      text-decoration: none;
+      color: #AAA;
+  }
+
+  .container-footer a:hover{
+      color: var(--vermelho);
+      transition: 0.5s;
+  }
+
+.gab-cardoso{
+    color:#AAA ;
+    text-align: center;
+    margin-top: 50px;
+}
