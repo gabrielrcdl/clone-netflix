@@ -30,6 +30,7 @@ header .container{
     align-items: center;
     justify-content: space-between;
     padding: 5px;
+    
 }
 
 header .logo{
@@ -52,6 +53,36 @@ header nav a:hover{
 }
 
 
+/*elementos do popup em tela */
+.popup-wrapper{
+    display: none;
+    background-color: var(--preta);
+    width: 50%;
+    height: 330px;
+    padding: 30px;
+    margin: auto;
+    margin-top: -16%;
+    z-index: 10;
+    
+  
+}
+.popup-content p{
+    text-align: justify;
+    font-size: 14px;
+    margin-top: 40px;
+    
+}
+.popup-close{
+    float: right;
+    color: white;
+    cursor: pointer;
+}
+.popup-close:hover{
+    color: var(--vermelho);
+    transition: 0.5s;
+}
+
+
 
 
 
@@ -67,7 +98,9 @@ header nav a:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;   
+    align-items: flex-start;  
+     
+    
 }
 
 .filme-principal .container{
