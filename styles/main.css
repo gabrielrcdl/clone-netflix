@@ -76,10 +76,16 @@ header nav a:hover{
     float: right;
     color: white;
     cursor: pointer;
+    padding: 12px;
+ 
 }
 .popup-close:hover{
     color: var(--vermelho);
+    background-color: rgba(0, 0, 0, 0.50);
     transition: 0.5s;
+    border-radius: 350px;
+    font-size: 15px;
+  
 }
 
 
